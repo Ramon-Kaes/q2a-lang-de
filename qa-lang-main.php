@@ -5,11 +5,11 @@
 	http://www.question2answer.org/
 
 	File: qa-lang/de/qa-lang-main.php
-	Version: 1.8.x
-	Tested: 1.8.6
-	Date: 2023-01-24
+	Version: 1.8.8
+	Tested: 1.8.8
+	Date: 2024-10-27
 	Description: Language phrases commonly used throughout Q2A in German
-	Translation: Peter Chiochetti, Moritz Bunkus, Philip Schilling, Corinna Baldauf, Fulgor@github
+	Translation: Peter Chiochetti, Moritz Bunkus, Philip Schilling, Corinna Baldauf, Fulgor@github, Ramon Kaes
 
 	This program is free software; you can redistribute it and/or
 	modify it under the terms of the GNU General Public License
@@ -25,6 +25,10 @@
 */
 
 	return array(
+		'_decimal_point' => ".",
+		'_thousands_separator' => ',',
+		'_thousands_suffix' => 'k',
+		'_millions_suffix' => 'm',
 		'1_answer' => '1 Antwort',
 		'1_comment' => '1 Kommentar',
 		'1_day' => '1 Tag',
@@ -81,15 +85,15 @@
 		'date_year_digits' => 4, // 2 or 4
 		'edited' => 'Bearbeitet',
 		'email_error' => 'Fehler beim Versuch eine E-Mail zu senden.',
-		'field_required' => 'Bitte geben Sie etwas in das Feld ein',
+		'field_required' => 'Bitte gib etwas in das Feld ein',
 		'file_upload_limit_exceeded' => 'Die Größe der Datei überschreitet den erlaubten Wert',
-		'general_error' => 'Server-seitiger Fehler - Bitte versuchen Sie es noch einmal',
+		'general_error' => 'Server-seitiger Fehler - Bitte versuche es noch einmal',
 		'hidden' => 'versteckt',
 		'highest_users' => 'Personen mit höchster Punktezahl',
 		'hot_qs_in_x' => 'Beliebte Fragen in ^',
 		'hot_qs_title' => 'Beliebte Fragen',
-		'image_not_read' => 'Das Bild konnte nicht gelesen werden. Bitte laden Sie eines hoch von: ^',
-		'image_too_big_x_pc' => 'Das Bild ist zu groß. Bitte verkleineren Sie es auf ^% und versuchen es erneut.',
+		'image_not_read' => 'Das Bild konnte nicht gelesen werden. Bitte lade eines hoch von: ^',
+		'image_too_big_x_pc' => 'Das Bild ist zu groß. Bitte verkleinere es auf ^% und versuche es erneut.',
 		'in_category_x' => 'in ^',
 		'ip_address_x' => 'IP-Adresse ^',
 		'logged_in_x' => '^',
@@ -122,6 +126,7 @@
 		'nav_unanswered' => 'Unbeantwortet',
 		'nav_updates' => 'Neuigkeiten',
 		'nav_users' => 'Personen',
+		'newest_users' => 'Neueste User',
 		'no_active_users' => 'Keine aktiven Konten gefunden',
 		'no_answers_found' => 'Keine Antworten gefunden',
 		'no_answers_in_x' => 'Keine Antworten in ^',
@@ -164,12 +169,12 @@
 		'retagged' => 'erneut getaggt',
 		'save_button' => 'Änderungen speichern',
 		'search_button' => 'Suchen',
-		'search_explanation' => 'Bitte geben Sie in der Suchbox Text ein, und versuchen Sie es dann erneut.',
+		'search_explanation' => 'Bitte gib in der Suchbox Text ein, und versuche es dann erneut.',
 		'search_title' => 'Fragen durchsuchen',
 		'selected' => 'ausgewählt',
 		'send_button' => 'Abschicken',
 		'since_x' => 'seit ^',
-		'suggest_ask' => 'Machen Sie den Anfang und ^1stellen eine Frage^2.',
+		'suggest_ask' => 'Mache den Anfang und ^1stellen eine Frage^2.',
 		'suggest_category_qs' => '^1Alle Fragen in dieser Kategorie anzeigen^2.',
 		'suggest_qs' => '^1Alle Fragen anzeigen^2.',
 		'suggest_qs_tags' => '^1Alle Fragen anzeigen^2 oder ^3die beliebtesten Tags ansehen^4.',
@@ -180,33 +185,36 @@
 		'unselected_qs_title' => 'Kürzlich gestellte Fragen ohne ausgewählte Antwort',
 		'unupvoteda_qs_in_x' => 'Fragen ohne Antwort mit positiver Bewertung in ^',
 		'unupvoteda_qs_title' => 'Kürzlich gestellte Fragen ohne eine Antwort mit positiver Bewertung',
-		'upload_limit' => 'Zu viele Uploads - bitte versuchen Sie es in einer Stunde wieder.',
-		'view_q_must_be_approved' => 'Ihr Konto muss zum Ansehen von Fragen freigegeben werden. Bitte warten Sie oder ^1fügen Sie weitere Informationen hinzu^2.',
-		'view_q_must_confirm' => 'Bitte ^5bestätigen Sie Ihre E-Mail-Adresse^6, um die Fragen-Seite aufzurufen.',
-		'view_q_must_login' => 'Bitte ^1loggen Sie ein^2 oder ^3registrieren sich^4, um die Fragen-Seite aufzurufen.',
+		'upload_limit' => 'Zu viele Uploads - bitte versuche es in einer Stunde wieder.',
+		'view_q_must_be_approved' => 'Dein Konto muss zum Ansehen von Fragen freigegeben werden. Bitte warten oder ^1füge weitere Informationen hinzu^2.',
+		'view_q_must_confirm' => 'Bitte ^5bestätige deine E-Mail-Adresse^6, um die Fragen-Seite aufzurufen.',
+		'view_q_must_login' => 'Bitte ^1logge dich ein^2 oder ^3registriere dich^4, um die Fragen-Seite aufzurufen.',
 		'viewed_qs_in_x' => 'Am häufigsten angesehene Fragen in ^',
 		'viewed_qs_title' => 'Am meisten aufgerufene Fragen',
 		'vote_disabled_approve' => 'Ihr Konto muss zum Bewerten freigegeben werden.',
 		'vote_disabled_down' => 'Nur bestimmte Konten dürfen Abwertungen vergeben',
 		'vote_disabled_down_approve' => 'Ihr Konto muss zum Abwerten freigegeben werden',
-		'vote_disabled_hidden_a' => 'Sie können für versteckte Antworten keine Punkte vergeben',
-		'vote_disabled_hidden_q' => 'Sie können für versteckte Fragen keine Punkte vergeben',
+		'vote_disabled_hidden_post' => "Du kannst versteckte Einträge nicht bewerten",
+		'vote_disabled_hidden_a' => 'Du kannst für versteckte Antworten keine Punkte vergeben',
+		'vote_disabled_hidden_q' => 'Du kannst für versteckte Fragen keine Punkte vergeben',
 		'vote_disabled_level' => 'Bewertungen sind nur für bestimmte Nutzer verfügbar',
-		'vote_disabled_my_a' => 'Sie können für Ihre eigenen Antworten keine Punkte vergeben',
-		'vote_disabled_my_q' => 'Sie können für Ihre eigenen Fragen keine Punkte vergeben',
-		'vote_disabled_q_page_only' => 'Bitte prüfen Sie die Frage, um Punkte zu vergeben',
-		'vote_down_must_confirm' => 'Bitte ^5bestätigen Sie Ihre E-Mail-Adresse^6, um eine negative Bewertung abzugeben.',
+		'vote_disabled_my_post' => "Du kannst eigene Einträge nicht bewerten",
+		'vote_disabled_my_a' => 'Du kannst eigenen Antworten keine Punkte vergeben',
+		'vote_disabled_my_q' => 'Du kannst für deine eigenen Fragen keine Punkte vergeben',
+		'vote_disabled_q_page_only' => 'Bitte prüfe die Frage, um Punkte zu vergeben',
+		'vote_disabled_queued' => "Du kannst nur bestätigte Einträge bewerten",
+		'vote_down_must_confirm' => 'Bitte ^5bestätige deine E-Mail-Adresse^6, um eine negative Bewertung abzugeben.',
 		'vote_down_popup' => 'Minuspunkt geben',
-		'vote_limit' => 'Zu viele Punkte erhalten - Bitte versuchen Sie es in einer Stunde wieder',
-		'vote_must_confirm' => 'Bitte ^5bestätigen Sie Ihre E-Mail-Adresse^6 um Punkte zu vergeben.',
-		'vote_must_login' => 'Bitte ^1loggen Sie ein^2 oder ^3registrieren sich^4 um Punkte zu vergeben.',
-		'vote_not_allowed' => 'Sie können dafür keine Punkte vergeben',
+		'vote_limit' => 'Zu viele Punkte erhalten - Bitte versuche es in einer Stunde wieder',
+		'vote_must_confirm' => 'Bitte ^5bestätige deine E-Mail-Adresse^6 um Punkte zu vergeben.',
+		'vote_must_login' => 'Bitte ^1logge dich ein^2 oder ^3registriere dich^4 um Punkte zu vergeben.',
+		'vote_not_allowed' => 'Du kannst dafür keine Punkte vergeben',
 		'vote_up_popup' => 'Pluspunkt geben',
-		'voted_down_popup' => 'Sie haben einen Minuspunkt gegeben - Minuspunkt zurücknehmen',
+		'voted_down_popup' => 'Du hast einen Minuspunkt gegeben - Minuspunkt zurücknehmen',
 		'voted_qs_in_x' => 'Fragen mit den meisten positiven Bewertungen in ^',
 		'voted_qs_title' => 'Am besten bewertete Fragen',
-		'voted_up_popup' => 'Sie haben einen Pluspunkt gegeben - Pluspunkt zurücknehmen',
-		'written' => '',
+		'voted_up_popup' => 'Du hast einen Pluspunkt gegeben - Pluspunkt zurücknehmen',
+		'written' => '', // blank in English - placeholder for other languages
 		'x_ago' => 'vor ^',
 		'x_answers' => '^ Antworten',
 		'x_comments' => '^ Kommentare',
@@ -226,15 +234,4 @@
 		'x_votes' => '^ Punkte',
 		'x_weeks' => '^ Wochen',
 		'x_years' => '^ Jahren',
-	  	'_decimal_point' => ".",
-    		'_millions_suffix' => "m",
-    		'_thousands_separator' => ",",
-    		'_thousands_suffix' => "k",
-    		'newest_users' => "Neueste Nutzende",
-    		'vote_disabled_hidden_post' => "Sie können versteckte Einträge nicht bewerten",
-    		'vote_disabled_my_post' => "Sie können eigene Einträge nicht bewerten",
-    		'vote_disabled_queued' => "Sie können nur bestätigte Einträge bewerten",
 	);
-/*
-	Omit PHP closing tag to help avoid accidental output
-*/
