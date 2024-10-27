@@ -1,22 +1,13 @@
-# q2a-lang-de ("Du")
+# q2a-lang-de-informal ("Du")
 
-German language pack for Question2Answer (Q2A) version 1.8.8 
+German language pack for Question2Answer (Q2A) version 1.8.8  
 Tested version: 1.8.8  
 https://www.question2answer.org/
 
-## Project-Status: ##
-**These files will work with Q2A version 1.8 frontend. (Translation of backend is work-in-progress.)**
-
-* Added new strings from Q2A version 1.8 to language pack of Q2A version 1.7.
-* Frontend: new strings of 1.8 are translated.
-* Backend: `qa-lang-admin.php` and `qa-lang-options.php` of 1.8 included.
-* Finished translation of `qa-lang-admin.php`.
-* Started translation of `qa-lang-options.php`.
-
 ## How to install language pack: ##
 
-* Download https://github.com/fulgor/q2a-lang-de-formal/archive/master.zip
+* Download https://github.com/Ramon-Kaes/q2a-lang-de/archive/refs/heads/master.zip
 * Unzip master.zip
 * Rename folder to `de-DE`.
 * Copy folder into `/qa-lang/`folder on server.
-* In Q2A-Admin goto `General -> Site language`, select `Deutsch (DE) -Sie-Form` then `Save Options`.
+* In Q2A-Admin goto `General -> Site language`, select `Deutsch (DE) - Du-Form` then `Save Options`.
