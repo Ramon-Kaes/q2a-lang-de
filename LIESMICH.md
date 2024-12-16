@@ -1,12 +1,14 @@
-# q2a-lang-de-formal ("Sie")
+# q2a-lang-de-informal ("Du")
 
 Deutsche Sprachdatei für Question2Answer (Q2A) Version 1.8.x  
-Getestet bis Version 1.8.6  
+Getestet bis Version 1.8.8  
 https://www.question2answer.org/
 
 ## Projekt-Status: ##
 **Diese Dateien funktionieren unter Q2A-Version 1.8 im Frontend. (Backend ist in Arbeit.)**
 
+* Um neue Strings der Version 1.8.8 ergänzt.
+* Umformulierung von formell in informell (Sie -> Du)
 * Sprachdateien von Q2A-Version 1.7 um neue Strings der Version 1.8 ergänzt.
 * Frontend: Übersetzung der neuen Strings abgeschlossen.
 * Backend: `qa-lang-admin.php` und `qa-lang-options.php` aus 1.8 übernommen.
